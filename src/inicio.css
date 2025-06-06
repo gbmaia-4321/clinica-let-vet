@@ -1,0 +1,268 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-color: #45AEB5;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.navegacao{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CFE3E7;
+  width: 100%;
+  height: 112px;
+  margin: 0;
+  padding: 10px;
+
+
+}
+
+#logo_clinica{
+  display: flex;
+  margin-left: 10%;
+}
+
+
+#botaoConsultaNav{
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  }
+
+
+
+.link_paginas li {
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+
+  
+}
+
+.link_paginas a{
+  color: black; 
+  text-decoration: none; 
+  margin: 10px;
+}
+
+.link_paginas a.ativo{
+  color: #FC667A; 
+  font-weight: bold;
+  border-bottom: 2px solid #FC667A;
+}
+
+
+.circulo {
+  background-image: url(/src/img/pattern\ cachorro.png );
+  width: 500px; /* Ajuste o tamanho conforme necessário */
+  height: 500px; /* Deve ser igual à largura para formar um círculo */
+  border-radius: 50%; /* Isso cria o formato circular */
+  background-color: #FC667A; /* Cor de fundo do círculo */
+  display: flex;
+  margin-left: 50%;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px;
+}
+
+.conteudo-centralizado {
+  max-width: 80%; /* Garante que o texto não encoste nas bordas */
+}
+
+.circulo h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.circulo .slogan {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.circulo .destaque {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+ .header-principal {
+  background-image: url(/src/img/bere\ anime\ \(1\).jpeg);
+  background-repeat: no-repeat;
+  background-size: 50% auto; 
+  background-position: 1000px center; 
+  background-color: #FC667A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  height: 500px;
+  
+} 
+
+ .texto-header {
+  display: flex;
+  background-image: url(/src/img/pattern\ cachorro.png );
+  width: 50%;
+  height: 100%;
+  background-color: #ff667c;
+  color: white;
+  z-index: 2;
+} 
+
+
+
+
+
+.sectiondetalhes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+#porqueescolher {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#detalhesClinica {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  justify-content: flex-start;
+}
+
+.detalhesdestaques {
+  flex: 1;
+  min-width: 300px;
+}
+
+.titulo-destaques {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.listaservicos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listaservicos li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.listaservicos li:hover {
+  transform: translateX(5px);
+}
+
+.listaservicos img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.fotoLeticia {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.fotoLeticia img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+#botaoConsulta{
+  margin-top: auto;
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  align-items: center; 
+  border-radius: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+
+
+.rodape {
+  background-color: #CFE3E7;
+  color: rgb(0, 0, 0);
+  padding: 30px 10%;
+}
+
+.conteudoRodape {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteudoRodape li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conteudoRodape img {
+  width: 25px;
+  height: 25px;
+}
+
+.conteudoRodape a {
+  color: black;
+}
+
+
