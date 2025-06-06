@@ -1,0 +1,191 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-color: #45AEB5;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.navegacao{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CFE3E7;
+  width: 100%;
+  height: 112px;
+  margin: 0;
+  padding: 10px;
+
+
+}
+
+#logo_clinica{
+  display: flex;
+  margin-left: 10%;
+}
+
+
+#botaoConsulta{
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  }
+
+
+
+.link_paginas li {
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+
+  
+}
+
+.link_paginas a{
+  color: black; 
+  text-decoration: none; 
+  margin: 10px;
+}
+
+.link_paginas a.ativo{
+  color: #FC667A; 
+  font-weight: bold;
+  border-bottom: 2px solid #FC667A;
+}
+
+
+
+
+.header-principal {
+  background-image: url(/src/img/bere\ anime\ \(1\).jpeg);
+  
+  background-repeat: no-repeat;
+  background-size: 50% auto; /* Reduza se quiser menos imagem */
+  background-position: 850px center; /* Move a imagem bem pra esquerda */
+  background-color: #fd678f;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px;
+  height: 500px;
+  
+}
+
+.texto-header {
+  background-image: url(/src/img/pattern\ cachorro.png );
+  width: 50%;
+  height: 100%;
+  background-color: #ff667c;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.texto-header h1 {
+  font-size: 40px;
+}
+
+.texto-header p {
+  font-size: 20px;
+}
+
+
+.sectiondetalhes{
+  padding: 20px;
+  margin: auto;
+  margin-right: 25%;
+
+  
+  
+}
+
+#porqueescolher{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#detalhesClinica{
+  font-size: 24px;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap ;
+  justify-content: start;
+  align-items: stretch;
+  align-content: start;
+  gap: 2%;
+}
+
+
+
+
+.listaservicos{
+  list-style-type: none;
+  background-color: black;
+  flex-basis: auto;
+  align-self: auto;
+  width: 75%;
+  height: 100%;
+  padding: 30px;
+  gap: 30px;
+}
+
+
+.fotoLeticia{
+  display: flex;
+  width: auto; 
+  height: 100%;
+}
+
+.rodape{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-color: #f60000;
+  align-items: stretch;
+  align-content: start;
+}
+
+.conteudoRodape{
+  display: flex;
+  list-style-type: none; 
+  align-items: center; 
+  width: 100%;
+  height: 5%;
+}
+
+
