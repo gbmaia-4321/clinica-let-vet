@@ -1,0 +1,1201 @@
+
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-color: #45AEB5;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.navegacao{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CFE3E7;
+  width: 100%;
+  height: 112px;
+  margin: 0;
+  padding: 10px;
+
+
+}
+
+#logo_clinica{
+  display: flex;
+  margin-left: 10%;
+}
+
+#link{
+  text-decoration: none;
+}
+
+#botaoConsulta{
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  }
+
+#botaoConsulta:hover {
+  background-color: #FF2C48;
+}
+
+
+
+.link_paginas li {
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+
+  
+}
+
+
+.link_paginas a{
+  color: black; 
+  text-decoration: none; 
+  margin: 10px;
+}
+
+.link_paginas a.ativo{
+  color: #FC667A; 
+  font-weight: bold;
+  border-bottom: 2px solid #FC667A;
+}
+
+
+
+.header-principal {
+  background-image: url(/src/img/gato\ propaganda.png);
+  position: relative;
+  height: 50vh; /* Ajuste conforme necessário */
+  overflow: hidden;
+  display: flex;
+  background-size: 50% auto; /* Diminui a largura para 70% e mantém proporção */
+  background-position: left 950px top -35px; /* Move a imagem para cima (negativo) e direita */
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  background-color: #FC667A; /* Cor de fundo para áreas não cobertas pela imagem */
+}
+
+/* Div do texto (esquerda) */
+#div-pattern {
+  background-color: #FC667A;
+  background-image: url(/src/img/pattern\ cachorro.png);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 10%; /* Espaçamento esquerdo aumentado */
+  font-family: Arial, sans-serif;
+  z-index: 2; /* Fica acima do círculo */
+}
+
+#div-pattern h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.circulo {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: #FC667A;
+  background-image: url(/src/img/pattern\ cachorro.png);
+  position: absolute;
+  left: 550px; /* Metade da largura para sobrepor 50% */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulodestaques {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.detalhesdestaques {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.fotomax {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.fotomax img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.link-botao {
+  text-decoration: none;
+}
+
+.botaoConsulta {
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botaoConsulta:hover {
+  background-color: #FF2C48;
+}
+
+
+
+.rodape {
+  background-color: #CFE3E7;
+  color: rgb(0, 0, 0);
+  padding: 30px 10%;
+  
+}
+
+.conteudoRodape {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteudoRodape li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conteudoRodape img {
+  width: 25px;
+  height: 25px;
+}
+
+.conteudoRodape a {
+  color: black;
+}
+
+
+/* --- INICIO.CSS --- */
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-color: #45AEB5;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.navegacao{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CFE3E7;
+  width: 100%;
+  height: 112px;
+  margin: 0;
+  padding: 10px;
+
+
+}
+
+#logo_clinica{
+  display: flex;
+  margin-left: 10%;
+}
+
+#link{
+  text-decoration: none;
+}
+
+#botaoConsultanav{
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  }
+
+#botaoConsultanav:hover {
+  background-color: #FF2C48;
+}
+
+
+
+.link_paginas li {
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+
+  
+}
+
+
+.link_paginas a{
+  color: black; 
+  text-decoration: none; 
+  margin: 10px;
+}
+
+.link_paginas a.ativo{
+  color: #FC667A; 
+  font-weight: bold;
+  border-bottom: 2px solid #FC667A;
+}
+ 
+
+/* Container principal */
+.header-principal-inicio{
+  background-image: url(/src/img/bere\ anime\ \(1\).jpeg);
+  position: relative;
+  height: 50vh; /* Ajuste conforme necessário */
+  overflow: hidden;
+  display: flex;
+  background-size: 50% auto; /* Diminui a largura para 70% e mantém proporção */
+  background-position: left 940px top -280px; /* Move a imagem para cima (negativo) e direita */
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  background-color: #FC667A; /* Cor de fundo para áreas não cobertas pela imagem */
+}
+
+/* Div do texto (esquerda) */
+#div-pattern {
+  background-color: #FC667A;
+  background-image: url(/src/img/pattern\ cachorro.png);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 10%; /* Espaçamento esquerdo aumentado */
+  font-family: Arial, sans-serif;
+  z-index: 2; /* Fica acima do círculo */
+}
+
+#div-pattern h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#div-pattern p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Círculo (direita) */
+.circulo {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: #FC667A;
+  background-image: url(/src/img/pattern\ cachorro.png);
+  position: absolute;
+  left: 550px; /* Metade da largura para sobrepor 50% */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 0px;
+}
+
+.titulo-destaques {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.detalhesdestaques{
+  width: 70%;
+  height: 50%;
+}
+
+.listaservicos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listaservicos li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.listaservicos img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.listaservicos li:hover {
+  transform: translateX(30px);
+}
+
+ .sectiondetalhes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+#detalhesClinica {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.fotoLeticia{
+  width: 50%;
+  height: 50%;  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.fotoLeticia img {
+  width: 120%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#botaoConsulta{
+  margin-top: auto;
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  align-items: center; 
+  border-radius: 30px;
+  padding: 20px;
+  cursor: pointer;
+  
+}  
+
+.rodape {
+  background-color: #CFE3E7;
+  color: rgb(0, 0, 0);
+  padding: 30px 10%;
+}
+
+.conteudoRodape {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteudoRodape li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conteudoRodape img {
+  width: 25px;
+  height: 25px;
+}
+
+.conteudoRodape a {
+  color: black;
+}
+
+
+
+
+/* --- SERVICOS.CSS --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-color: #45AEB5;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.navegacao{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CFE3E7;
+  width: 100%;
+  height: 112px;
+  margin: 0;
+  padding: 10px;
+
+
+}
+
+#logo_clinica{
+  display: flex;
+  margin-left: 10%;
+}
+
+
+#botaoConsultanav{
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  }
+
+#botaoConsultanav:hover {
+  background-color: #FF2C48;
+}
+
+
+
+.link_paginas li {
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+
+  
+}
+
+
+.link_paginas a{
+  color: black; 
+  text-decoration: none; 
+  margin: 10px;
+}
+
+.link_paginas a.ativo{
+  color: #FC667A; 
+  font-weight: bold;
+  border-bottom: 2px solid #FC667A;
+}
+ 
+ 
+
+.background_header {
+  background-image: 
+    url(/src/img/pattern\ cachorro.png),
+    linear-gradient(
+      90deg, 
+      #FC667A 0%, 
+      #FC667A 50%, 
+      rgba(252, 102, 122, 0.8) 70%, 
+      rgba(252, 102, 122, 0) 85%
+    );
+
+  background-repeat: no-repeat;
+  background-position: left center, left;
+  background-size:  1250px 100%, 100% 100%; /* Padrão ocupa apenas 200px de largura */
+
+  display: flex;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 38px;
+}
+
+.imagem_header-servicos {
+  background: #FC667A;
+  background-image: url(/src/img/IMG_8229.JPG);
+  background-repeat: no-repeat;
+  background-size: 600px; 
+  background-position: right center; /* Garante alinhamento à direita */
+  height: 500px;
+  position: relative;
+  z-index: 1; /* Eleva a imagem acima do gradiente (se necessário) */
+}
+
+#conhecaServiços{
+  padding: 20px;
+  text-align: center;
+  font-size: 38px;
+
+}
+
+
+.container{
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+
+.servicos-veterinarios {
+  padding: 40px;
+  width: 443px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  
+} 
+
+
+
+.lista-servicos {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaço entre itens reduzido */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 100%)); 
+  gap: 15px;
+  width: 100%; 
+}
+
+.lista-servicos li {
+  color: black;
+  background-color: #BEE4E5;
+  padding: 12px 20px; /* Reduzi o padding vertical */
+  border: 2px solid #326966;
+  font-size: 18px; /* Tamanho de fonte um pouco menor */
+  border-radius: 12px;
+  transition: all 0.3s;
+  line-height: 1.4; /* Controle do espaçamento entre linhas */
+  transition: transform 0.2s;
+}
+
+.lista-servicos li:hover{
+    transform: translateX(10px);
+  background-color: #a8d8d9;
+}
+
+@media (max-width: 600px) {
+  .lista-servicos {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.checkup{
+  background-color: #E0BAC5;
+  border-radius: 30px;
+}
+
+
+.checkup-container {
+  width: 376px;
+  padding: 0 20px;
+  gap: 20px;
+  padding-bottom: 0 !important;
+}
+
+.checkup-title {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.checkup-benefits {
+  list-style: none;
+  padding: 0;
+   margin-bottom: 0 !important;
+}
+
+.checkup-benefits li {
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  font-size: 24px;
+  margin-bottom: 0 !important;
+
+}
+
+.servicos-secao {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicos-secao > div {
+  flex: 1 1 300px;
+  max-width: 380px;
+}
+
+@media (max-width: 900px) {
+  .servicos-secao {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .checkup-title {
+    font-size: 28px;
+  }
+  
+  .checkup-benefits li {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+
+
+
+.horarios-container {
+  background-color: #E0BAC5;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.horarios-container h2 {
+  color: #fff; 
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.tabela-horarios {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tabela-horarios td {
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.tabela-horarios tr td:first-child {
+  font-weight: bold;
+  width: 40%;
+}
+
+
+/* Destaque para os horários */
+.tabela-horarios tr td:last-child {
+  color: #555;
+  text-align: center;
+}
+
+/* Versão mobile */
+@media (max-width: 600px) {
+  .tabela-horarios td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .horarios-container h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+#link{
+  text-decoration: none;
+}
+
+
+#botaoConsulta{
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#botaoConsulta:hover {
+  background-color: #FF2C48;
+}
+
+.botoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rodape {
+  background-color: #CFE3E7;
+  color: rgb(0, 0, 0);
+  padding: 30px 10%;
+  
+}
+
+.conteudoRodape {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteudoRodape li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conteudoRodape img {
+  width: 25px;
+  height: 25px;
+}
+
+.conteudoRodape a {
+  color: black;
+}
+
+
+/* --- SOBRE-NOS.CSS --- */
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-color: #45AEB5;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#link{
+  text-decoration: none;
+}
+
+.navegacao{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CFE3E7;
+  width: 100%;
+  height: 112px;
+  margin: 0;
+  padding: 10px;
+
+
+}
+
+#logo_clinica{
+  display: flex;
+  margin-left: 10%;
+}
+
+
+#botaoConsulta{
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  }
+
+#botaoConsulta:hover {
+  background-color: #FF2C48;
+}
+
+
+
+.link_paginas li {
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+
+  
+}
+
+.link_paginas a{
+  color: black; 
+  text-decoration: none; 
+  margin: 10px;
+}
+
+.link_paginas a.ativo{
+  color: #FC667A; 
+  font-weight: bold;
+  border-bottom: 2px solid #FC667A;
+}
+
+
+
+.header-principal-sobre{
+  background-image: url(/src/img/dog-propaganda.png);
+  position: relative;
+  height: 50vh; /* Ajuste conforme necessário */
+  overflow: hidden;
+  display: flex;
+  background-size: 50% auto; /* Diminui a largura para 70% e mantém proporção */
+  background-position: left 950px top -350px; /* Move a imagem para cima (negativo) e direita */
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  background-color: #FC667A; /* Cor de fundo para áreas não cobertas pela imagem */
+}
+
+/* Div do texto (esquerda) */
+#div-pattern {
+  background-color: #FC667A;
+  background-image: url(/src/img/pattern\ cachorro.png);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 10%; /* Espaçamento esquerdo aumentado */
+  font-family: Arial, sans-serif;
+  z-index: 2; /* Fica acima do círculo */
+}
+
+#div-pattern h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.circulo {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: #FC667A;
+  background-image: url(/src/img/pattern\ cachorro.png);
+  position: absolute;
+  left: 550px; /* Metade da largura para sobrepor 50% */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulodestaques { /* Corrigido para combinar com o HTML */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.detalhesdestaques {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.fotomax {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.fotomax img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.link-botao {
+  text-decoration: none;
+}
+
+.botaoConsulta {
+  color: white;
+  font-size: 20px;
+  width: 344px;
+  height: 60px;
+  background-color: #FC667A;
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-radius: 30px;
+  margin-right: 100px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botaoConsulta:hover {
+  background-color: #FF2C48;
+}
+
+.rodape {
+  background-color: #CFE3E7;
+  color: rgb(0, 0, 0);
+  padding: 30px 10%;
+}
+
+.conteudoRodape {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.conteudoRodape li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conteudoRodape a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* --- RESPONSIVO GLOBAL --- */
+@media (max-width: 768px) {
+  .navegacao {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .link_paginas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #botaoConsulta, #botaoConsultanav {
+    width: 90% !important;
+    font-size: 16px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .detalhesdestaques, .fotomax, .fotoLeticia {
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  .circulo {
+    display: none !important;
+  }
+
+  #div-pattern {
+    width: 100% !important;
+    padding: 30px 5%;
+    text-align: center;
+    background-size: cover;
+  }
+
+  #div-pattern h1 {
+    font-size: 30px !important;
+  }
+
+  .header-principal {
+    flex-direction: column;
+    height: auto;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .checkup-container, .horarios-container, .servicos-veterinarios {
+    width: 100% !important;
+    padding: 15px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .rodape {
+    text-align: center;
+  }
+
+  .conteudoRodape {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
